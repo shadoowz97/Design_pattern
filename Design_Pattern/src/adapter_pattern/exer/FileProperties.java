@@ -8,7 +8,7 @@ import java.util.Properties;
 public class FileProperties implements FileIO{
     Properties prop;
     public FileProperties(){
-    	
+    	prop=new Properties();
     }
 	@Override
 	public void readFromFile(String filename) throws IOException {
