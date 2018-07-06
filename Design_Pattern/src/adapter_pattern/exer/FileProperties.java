@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class FileProperties implements FileIO{
-    Properties prop;
+    private Properties prop;
     public FileProperties(){
     	prop=new Properties();
     }
@@ -20,7 +20,7 @@ public class FileProperties implements FileIO{
 	@Override
 	public void writeToFile(String filename) throws IOException {
 		// TODO Auto-generated method stub
-		prop.store(new FileOutputStream(filename), "#written by FileProperties\r\n#2018/07/06");
+		prop.store(new FileOutputStream(filename), "written by FileProperties");
 	}
 
 	@Override
