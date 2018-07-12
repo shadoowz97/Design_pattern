@@ -52,6 +52,9 @@ public class Main {
 		page.add(traySearch);
 		page.outPut();
 		
+		Page yahooPage=factory.createYahooPage();
+		yahooPage.outPut();
+		
 	}
 
 }
